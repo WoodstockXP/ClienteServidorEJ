@@ -12,3 +12,12 @@ h1{
     font-size: x-large;
     color: blueviolet;
 }
+
+ol {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+
+li {
+    text-decoration: dotted;
+}
