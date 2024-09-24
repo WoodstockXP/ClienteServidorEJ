@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/* Configuración del cuerpo y fondo (ya incluido anteriormente) */
 html, body {
     margin: 0;
     padding: 0;
@@ -12,6 +11,7 @@ html, body {
     color: white;
 }
 
+/* Estilo de encabezados */
 h1 {
     font-size: 3rem;
     color: #FFFFFF;
@@ -28,13 +28,30 @@ h2 {
     text-transform: uppercase;
 }
 
+/* Estilo para las listas ordenadas */
 ol {
-    list-style-type: none;
+    list-style-type: none; /* Quitamos los números */
     padding: 0;
     margin: 20px auto;
-    max-width: 600px;
 }
 
+/* Estilo para la lista de equipos */
+ol.equipos {
+    max-width: 600px; /* Limitamos el ancho de la lista */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para la lista de pilotos en dos columnas */
+ol.pilotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre columnas */
+    max-width: 800px;
+}
+
+/* Estilo para los elementos de la lista */
 li {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px 15px;
@@ -48,17 +65,15 @@ li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Iconos antes de cada elemento de la lista */
 li::before {
-    content: '🏎️';
+    content: '🏎️'; /* Ícono de carro antes de cada elemento */
     margin-right: 10px;
 }
 
+/* Efecto hover para los elementos de la lista */
 li:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-html {
-    scroll-behavior: smooth;
 }
