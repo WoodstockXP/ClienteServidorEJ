@@ -3,10 +3,11 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     background: linear-gradient(135deg, #FF5722, #03A9F4);
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -38,9 +39,9 @@ ol {
 /* Estilo para la lista de equipos */
 ol.equipos {
     max-width: 600px; /* Limitamos el ancho de la lista */
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
 }
 
 /* Estilo para la lista de pilotos en dos columnas */
