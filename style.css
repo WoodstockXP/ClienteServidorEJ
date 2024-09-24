@@ -3,16 +3,12 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     background: linear-gradient(135deg, #FF5722, #03A9F4);
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
-/* Estilo de encabezados */
 h1 {
     font-size: 3rem;
     color: #FFFFFF;
@@ -29,30 +25,24 @@ h2 {
     text-transform: uppercase;
 }
 
-/* Estilo para las listas ordenadas */
 ol {
-    list-style-type: none; /* Quitamos los números */
+    list-style-type: none;
     padding: 0;
     margin: 20px auto;
 }
 
-/* Estilo para la lista de equipos */
 ol.equipos {
-    max-width: 600px; /* Limitamos el ancho de la lista */
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
+    max-width: 400px;
 }
 
-/* Estilo para la lista de pilotos en dos columnas */
 ol.pilotos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    gap: 20px; /* Espacio entre columnas */
-    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    max-width: 700px;
+    padding-bottom: 100px;
 }
 
-/* Estilo para los elementos de la lista */
 li {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px 15px;
@@ -61,18 +51,18 @@ li {
     font-size: 1.2rem;
     transition: all 0.3s ease;
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Iconos antes de cada elemento de la lista */
 li::before {
-    content: '🏎️'; /* Ícono de carro antes de cada elemento */
+    content: '🏎️';
     margin-right: 10px;
 }
 
-/* Efecto hover para los elementos de la lista */
 li:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
